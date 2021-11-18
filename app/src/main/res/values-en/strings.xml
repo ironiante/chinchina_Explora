@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Explore Chinchina</string>
+    <string name="nombre_hacienda">Guayabal Farm</string>
+    <string name="imagen_finca">Guayabal Farm</string>
+    <string name="ubicacion">Farm</string>
+    <string name="app_temperatura">farm_temperature</string>
+    <string name="missitios">my_sites</string>
+    <string name="nombre_ubicacion">ubication</string>
+    <string name="location">Km 13 via chinchina to pereira</string>
+    <string name="temperature">19 C°</string>
+    <string name="sites">My sites</string>
+    <string name="intro">About:</string>
+    <string name="descripcion_sitio" />
+    <string name="Descripcion_sitio_hacienda">A magical transition, from the bean to the cup. Do you know why it is the best coffee in the world? The answers are at Hacienda Guayabal. To know Colombia, you must start with its heart. The best coffee tour, guided tour, visits every day and much more. Coffee cultivated in the family for more than 50 years. 100% Colombian coffee.</string>
+
+    <string name="retornar">back</string>
+</resources>
