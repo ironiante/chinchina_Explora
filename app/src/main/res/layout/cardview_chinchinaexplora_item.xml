@@ -24,15 +24,15 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/hacienda_guayabal_imagen_view"
+                android:id="@+id/hacienda_guayabal_image_view"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@null"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/haciendaGuayabal"
-                android:contentDescription="@null" />
+                app:srcCompat="@drawable/haciendaGuayabal" />
 
             <TextView
                 android:id="@+id/nombre_sitio_text_view"
@@ -41,38 +41,31 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/nombre_hacienda"
-                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_imagen_view"
+                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_image_view"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ubicacion_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/descripcion_corta_text_view"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/nombre_ubicacion"
-                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_imagen_view"
+                android:layout_marginEnd="8dp"
+                android:text="@string/pequeña_descripcion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_image_view"
                 app:layout_constraintTop_toBottomOf="@+id/nombre_sitio_text_view" />
 
             <TextView
-                android:id="@+id/temperatura_text_view"
+                android:id="@+id/puntuacion_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/app_temperatura"
-                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_imagen_view"
-                app:layout_constraintTop_toBottomOf="@+id/ubicacion_text_view" />
+                android:text="@string/puntuacion"
+                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_image_view"
+                app:layout_constraintTop_toBottomOf="@+id/descripcion_corta_text_view" />
 
-            <TextView
-                android:id="@+id/mis_sitios_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/missitios"
-                app:layout_constraintStart_toEndOf="@+id/hacienda_guayabal_imagen_view"
-                app:layout_constraintTop_toBottomOf="@+id/temperatura_text_view" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

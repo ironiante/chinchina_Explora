@@ -3,6 +3,8 @@ package com.jirmanrodriguez.misiontic.chinchinaexplora
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class sitiosturisticos_Adapter(
@@ -11,7 +13,7 @@ class sitiosturisticos_Adapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_list_chinina_explora, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.cardview_chinchinaexplora_item, parent, false)
         return ViewHolder(view)
 
     }
@@ -21,12 +23,22 @@ class sitiosturisticos_Adapter(
 
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int = sitiosturisticoslist.size
 
     }
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view){
+    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        private var nombreSitioTextView: TextView = itemView.findViewById(R.id.nombre_sitio_text_view)
+        private var descripcionCortaTextView: TextView = itemView.findViewById(R.id.descripcion_corta_text_view)
+        private var puntuacionTextView: TextView = itemView.findViewById(R.id.puntuacion_text_view)
+        private var haciendaGuayabalImageView: ImageView = itemView.findViewById(R.id.hacienda_guayabal_image_view)
 
-        fun bind (sitiosturisticos: sitiosturisticos)
+        fun bind (sitiosturisticos: Sitiosturisticos){
+            nombreSitioTextView.text=sitiosturisticos.nombre
+            descripcionCortaTextView.text=sitiosturisticos.descripcion
+            puntuacionTextView.text=sitiosturisticos.puntuacion
+
+        }
+
 
     }
 }
