@@ -39,7 +39,7 @@
             <TextView
                 android:id="@+id/name_text_View"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/nombre_sitio"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -48,9 +48,11 @@
 
             <TextView
                 android:id="@+id/descripcion_text_View"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
                 android:text="@string/descripcion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.467"
@@ -59,11 +61,13 @@
 
             <TextView
                 android:id="@+id/puntuacion_text_view"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
                 android:text="puntuacion"
-                android:textAlignment="center"
+                android:textAlignment="gravity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/picture_image_View"
                 app:layout_constraintTop_toBottomOf="@+id/descripcion_text_View" />
