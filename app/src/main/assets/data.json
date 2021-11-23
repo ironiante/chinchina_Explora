@@ -1,0 +1,32 @@
+[
+   {
+      "Nombre del lugar":"Hacienda Guayabal ",
+      "Descripción":"Un tránsito mágico, del grano a la taza.",
+      "Puntuación" : 4.5,
+      "urlpicture":"https://i.ibb.co/ZfHpQnh/chi1.jpg"
+   },
+   {
+      "Nombre del lugar":"Hacienda El Sinai ",
+      "Descripción":"Hacienda de la familia hernández por 5 generaciones desde 1854",
+      "Puntuación" : 4.1,
+      "urlpicture":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/6b/43/c8/hacienda-el-sinai.jpg"
+   },
+   {
+      "Nombre del lugar":"Plaza de bolivar ",
+      "Descripción":"Es el punto neurálgico del municipio donde uno puede tomarse un café",
+      "Puntuación" : 4.0,
+      "urlpicture":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/b3/df/59/20180106-194850-largejpg.jpg"
+   },
+   {
+      "Nombre del lugar":"Hacienda La Gaviota  ",
+      "Descripción":"La Hacienda La Gaviota es una granja que cultiva uno de los mejores cafés del mundo",
+      "Puntuación" : 4.6,
+      "urlpicture":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/62/e1/33/un-lugar-magico-en-el.jpg"
+   },
+   {
+      "Nombre del lugar":"Granja Pinares  ",
+      "Descripción":"Ganadería - Porcicultura -Especies menores Restaurante - Piscicultura",
+      "Puntuación" : 4.9,
+      "urlpicture":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/4c/c6/b7/granja-pinares.jpg"
+   }
+]
