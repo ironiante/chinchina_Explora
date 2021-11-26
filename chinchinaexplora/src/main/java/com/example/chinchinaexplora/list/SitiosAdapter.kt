@@ -1,4 +1,4 @@
-package com.jirmanrodriguez.misiontic.sprint2_entrega_final
+package com.example.chinchinaexplora.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,11 +6,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chinchinaexplora.R
+import com.example.chinchinaexplora.model.sitioItem
+
 import com.squareup.picasso.Picasso
 
 class sitiosAdapter(
-    private val sitiosTuristicoList: ArrayList<sitioItem>
-) :RecyclerView.Adapter<sitiosAdapter.sitiosViewHolder>() {
+    private val sitiosTuristicoList: ArrayList<sitioItem>,
+    private val onItemClicked: (sitioItem) -> Unit)
+:RecyclerView.Adapter<sitiosAdapter.sitiosViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): sitiosViewHolder {
@@ -30,8 +34,7 @@ class sitiosAdapter(
 
     class sitiosViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var nombreSitioTextView: TextView = itemView.findViewById(R.id.name_text_View)
-        private var descripcionCortaTextView: TextView =
-            itemView.findViewById(R.id.descripcion_text_View)
+        private var descripcionCortaTextView: TextView = itemView.findViewById(R.id.descripcion_text_View)
         private var puntuacionTextView: TextView = itemView.findViewById(R.id.puntuacion_text_view)
         private var haciendaImageView: ImageView = itemView.findViewById(R.id.picture_image_View)
 
@@ -40,7 +43,6 @@ class sitiosAdapter(
             descripcionCortaTextView.text = sitiosturisticos.descripción
             puntuacionTextView.text = sitiosturisticos.puntuación.toString()
             Picasso.get().load(sitiosturisticos.urlpicture).into(haciendaImageView)
-
 
         }
 

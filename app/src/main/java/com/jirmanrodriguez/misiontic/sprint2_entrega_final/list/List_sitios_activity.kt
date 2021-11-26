@@ -1,11 +1,16 @@
-package com.jirmanrodriguez.misiontic.sprint2_entrega_final
+package com.jirmanrodriguez.misiontic.sprint2_entrega_final.list
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.jirmanrodriguez.misiontic.sprint2_entrega_final.Detalle.DetalleActivity
+import com.jirmanrodriguez.misiontic.sprint2_entrega_final.R
+import com.jirmanrodriguez.misiontic.sprint2_entrega_final.model.sitio
+import com.jirmanrodriguez.misiontic.sprint2_entrega_final.model.sitioItem
 
 class list_sitios_activity: AppCompatActivity() {
 
@@ -19,13 +24,18 @@ class list_sitios_activity: AppCompatActivity() {
 
         sitiosturisticosRecyclerView = findViewById(R.id.sitios_recycler_view)
         listChinchinaexplora = loadMockSitiosTuristicosFromJson()
-        sitiosturisticosAdapter = sitiosAdapter(listChinchinaexplora)
+        sitiosturisticosAdapter = sitiosAdapter(listChinchinaexplora, onItemClicked = {onSitioTuristicoClicked(it)})
 
         sitiosturisticosRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = sitiosturisticosAdapter
             setHasFixedSize(false)
         }
+    }
+    private fun onSitioTuristicoClicked(sitio: sitioItem) {
+        val intent = Intent(this, DetalleActivity::class.java)
+        intent.putExtra("sitio", sitio)
+        startActivity(intent)
     }
 
     private fun loadMockSitiosTuristicosFromJson(): ArrayList<sitioItem> {
@@ -36,3 +46,5 @@ class list_sitios_activity: AppCompatActivity() {
     }
 
 }
+
+

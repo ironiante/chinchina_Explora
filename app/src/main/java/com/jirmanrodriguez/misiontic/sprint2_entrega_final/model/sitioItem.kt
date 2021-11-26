@@ -1,7 +1,8 @@
-package com.jirmanrodriguez.misiontic.sprint2_entrega_final
+package com.jirmanrodriguez.misiontic.sprint2_entrega_final.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class sitioItem(
     @SerializedName("Descripción")
@@ -12,4 +13,4 @@ data class sitioItem(
     val puntuación: Double,
     @SerializedName("urlpicture")
     val urlpicture: String
-)
+): Serializable

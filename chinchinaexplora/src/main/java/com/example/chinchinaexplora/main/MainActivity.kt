@@ -1,7 +1,8 @@
-package com.jirmanrodriguez.misiontic.sprint2_entrega_final
+package com.example.chinchinaexplora.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.chinchinaexplora.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

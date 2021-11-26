@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">chinchinaExplora</string>
+    <string name="app_name">ChinchinaExplora</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="nombre_hacienda">Hacienda Guayabal</string>
     <string name="imagen_finca">Hacienda Guayabal</string>
     <string name="ubicacion">Hacienda</string>
