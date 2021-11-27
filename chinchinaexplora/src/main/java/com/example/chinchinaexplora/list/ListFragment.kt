@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.chinchinaexplora.R
 import com.example.chinchinaexplora.databinding.FragmentListBinding
 import com.example.chinchinaexplora.model.sitio
@@ -22,8 +24,7 @@ class ListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
         listBinding = FragmentListBinding.inflate (inflater, container, false)
 
         return listBinding.root
@@ -34,12 +35,18 @@ class ListFragment : Fragment() {
         listChinchinaexplora = loadMockSitiosTuristicosFromJson()
         sitiosturisticosAdapter = sitiosAdapter(listChinchinaexplora, onItemClicked = {onSitioTuristicoClicked(it)})
 
+        listBinding.sitiosRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = sitiosturisticosAdapter
+            setHasFixedSize(false)
+        }
+
     }
 
     private fun onSitioTuristicoClicked(sitio: sitioItem) {
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitio))
 
     }
-
 
     private fun loadMockSitiosTuristicosFromJson(): ArrayList<sitioItem> {
         val sitiosTuristicosString: String = context?.assets?.open("data.json")?.bufferedReader().use { it!!.readText() }
@@ -47,7 +54,5 @@ class ListFragment : Fragment() {
         val sitiosTuristicoList = gson.fromJson(sitiosTuristicosString, sitio:: class.java)
         return sitiosTuristicoList
     }
-
-
 
 }

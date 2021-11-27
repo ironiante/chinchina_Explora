@@ -18,5 +18,10 @@
         android:id="@+id/detailFragment"
         android:name="com.example.chinchinaexplora.detail.detailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+
+        <argument
+            android:name="sitioturistico"
+            app:argType="com.example.chinchinaexplora.model.sitioItem" />
+    </fragment>
 </navigation>
