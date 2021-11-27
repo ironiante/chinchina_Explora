@@ -17,4 +17,19 @@
     <string name="Descripcion_sitio_hacienda">\"Un tránsito mágico, del grano a la taza..."\ ¿Sabes por qué es el mejor café del mundo? \" Las respuestas están en la Hacienda Guayabal. Para conocer a Colombia, debes empezar por su corazón. El mejor Tour del café, tour guiado, visitas todos los días y mucho más. Café cultivado en familia por más de 50 años. 100% café Colombiano.</string>
 
     <string name="retornar">atrás</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="notifications">notificaciones</string>
 </resources>
