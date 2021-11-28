@@ -18,14 +18,14 @@ class sitiosAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): sitiosViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_view_sitio_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_sitio_item, parent, false)
         return sitiosViewHolder(view)
 
     }
 
     override fun onBindViewHolder(holder: sitiosViewHolder, position: Int) {
         val sitiosturisticos = sitiosTuristicoList[position]
+        holder.itemView.setOnClickListener { onItemClicked(sitiosTuristicoList[position]) }
         holder.bind(sitiosturisticos)
 
     }
@@ -36,13 +36,13 @@ class sitiosAdapter(
         private var nombreSitioTextView: TextView = itemView.findViewById(R.id.name_text_View)
         private var descripcionCortaTextView: TextView = itemView.findViewById(R.id.descripcion_text_View)
         private var puntuacionTextView: TextView = itemView.findViewById(R.id.puntuacion_text_view)
-        private var haciendaImageView: ImageView = itemView.findViewById(R.id.picture_image_View)
+        private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_View)
 
         fun bind(sitiosturisticos: sitioItem) {
             nombreSitioTextView.text = sitiosturisticos.nombreDelLugar
             descripcionCortaTextView.text = sitiosturisticos.descripción
             puntuacionTextView.text = sitiosturisticos.puntuación.toString()
-            Picasso.get().load(sitiosturisticos.urlpicture).into(haciendaImageView)
+            Picasso.get().load(sitiosturisticos.urlpicture).into(pictureImageView)
 
         }
 

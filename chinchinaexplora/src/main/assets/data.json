@@ -3,7 +3,10 @@
       "Nombre del lugar":"Hacienda Guayabal ",
       "Descripción":"Un tránsito mágico, del grano a la taza.",
       "Puntuación" : 4.5,
-      "urlpicture":"https://i.ibb.co/KDy0NJ8/guayabal.jpg"
+      "urlpicture":"https://i.ibb.co/KDy0NJ8/guayabal.jpg",
+      "descripcion2": "¿Un tránsito mágico, del grano a la taza... ¿Sabes por qué es el mejor café del mundo? Las respuestas están en la Hacienda Guayabal. Para conocer a Colombia, debes empezar por su corazón. El mejor Tour del café, tour guiado, visitas todos los días y mucho más. Café cultivado en familia por más de 50 años. 100% café Colombiano.",
+      "indicacion" : "Km 13 via Chinchiná a Pereira",
+      "temperatura" : "19 C°"
    },
    {
       "Nombre del lugar":"Hacienda El Sinai ",

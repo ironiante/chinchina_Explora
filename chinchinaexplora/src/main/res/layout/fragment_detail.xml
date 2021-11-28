@@ -8,13 +8,13 @@
     tools:context=".detail.detailFragment">
 
     <TextView
-        android:id="@+id/descripcion_text_view"
+        android:id="@+id/descripcion2_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="137dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/Descripcion_sitio_hacienda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +91,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/indicacion_text_view"
         android:layout_width="103dp"
         android:layout_height="50dp"
         android:layout_weight="1"
@@ -102,15 +102,15 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/temperatura_text_view"
         android:layout_width="77dp"
         android:layout_height="47dp"
         android:layout_marginBottom="53dp"
         android:text="@string/temperature"
-        app:layout_constraintBottom_toTopOf="@+id/descripcion_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion2_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/indicacion_text_view"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -121,7 +121,7 @@
         android:text="@string/sites"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/temperatura_text_view"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
@@ -130,21 +130,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/intro"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Atras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/indicacion_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
