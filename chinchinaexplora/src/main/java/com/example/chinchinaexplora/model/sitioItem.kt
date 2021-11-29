@@ -5,12 +5,18 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class sitioItem(
+    @SerializedName("descripcion2")
+    val descripcion2: String?,
     @SerializedName("Descripción")
-    val descripción: String,
+    val descripción: String?,
+    @SerializedName("indicacion")
+    val indicacion: String?,
     @SerializedName("Nombre del lugar")
-    val nombreDelLugar: String,
+    val nombreDelLugar: String?,
     @SerializedName("Puntuación")
-    val puntuación: Double,
+    val puntuación: Double?,
+    @SerializedName("temperatura")
+    val temperatura: String?,
     @SerializedName("urlpicture")
-    val urlpicture: String
+    val urlpicture: String?
 ): Serializable

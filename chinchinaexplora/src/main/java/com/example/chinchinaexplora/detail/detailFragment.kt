@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.example.chinchinaexplora.databinding.FragmentDetailBinding
 import com.example.chinchinaexplora.main.MainActivity
+import com.example.chinchinaexplora.model.sitio
 
 
 class detailFragment : Fragment() {
@@ -35,7 +36,9 @@ class detailFragment : Fragment() {
 
         with(detailBinding){
             nameTextView.text =sitiosturisticos.nombreDelLugar
-            descripcion2TextView.text = sitiosturisticos.descripción
+            descripcion2TextView.text = sitiosturisticos.descripcion2
+            indicacionTextView.text = sitiosturisticos.indicacion
+            temperaturaTextView.text = sitiosturisticos.temperatura
 
             com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlpicture).into(pictureImageView)
         }
