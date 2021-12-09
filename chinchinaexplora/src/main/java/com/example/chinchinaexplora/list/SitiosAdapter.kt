@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chinchinaexplora.R
 import com.example.chinchinaexplora.model.sitioItem
-
 import com.squareup.picasso.Picasso
 
 class sitiosAdapter(
     private val sitiosTuristicoList: ArrayList<sitioItem>,
     private val onItemClicked: (sitioItem) -> Unit)
-:RecyclerView.Adapter<sitiosAdapter.sitiosViewHolder>() {
+    :RecyclerView.Adapter<sitiosAdapter.sitiosViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): sitiosViewHolder {
@@ -31,6 +30,13 @@ class sitiosAdapter(
     }
 
     override fun getItemCount(): Int = sitiosTuristicoList.size
+
+    fun appendItems(newItems: ArrayList<sitioItem>) {
+        sitiosTuristicoList.clear()
+        sitiosTuristicoList.addAll(newItems)
+        notifyDataSetChanged()
+
+    }
 
     class sitiosViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var nombreSitioTextView: TextView = itemView.findViewById(R.id.name_text_View)
