@@ -30,6 +30,10 @@ class MapsFragment : Fragment() {
         val guayabal = LatLng(4.95879418439515, -75.60643664188851)
         googleMap.addMarker(MarkerOptions().position(guayabal).title("Hacienda Guayabal").snippet("Chinchina, val: 4.5 "))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(guayabal, 10F))
+
+        val sinai = LatLng(4.9540412153650095, -75.66092164525296)
+        googleMap.addMarker(MarkerOptions().position(sinai).title("Hacienda El Sinai").snippet("Chinchina, val: 4.1 "))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sinai, 10F))
     }
 
     override fun onCreateView(
