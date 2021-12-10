@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.chinchinaexplora.databinding.FragmentDetailBinding
 import com.example.chinchinaexplora.main.MainActivity
@@ -42,10 +43,11 @@ class detailFragment : Fragment() {
             descripcion2TextView.text = sitiosturisticos.descripcion2
             indicacionTextView.text = sitiosturisticos.indicacion
             temperaturaTextView.text = sitiosturisticos.temperatura
-
             com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlpicture).into(pictureImageView)
+
+            mapButton.setOnClickListener {
+                findNavController().navigate(detailFragmentDirections.actionDetailFragmentToMapsFragment())
+            }
         }
     }
-
-
 }
