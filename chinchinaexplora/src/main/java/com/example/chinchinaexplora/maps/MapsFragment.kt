@@ -28,7 +28,7 @@ class MapsFragment : Fragment() {
          */
 
         val guayabal = LatLng(4.95879418439515, -75.60643664188851)
-        googleMap.addMarker(MarkerOptions().position(guayabal).title("Hacienda Guayabal").snippet("Ghinchina"))
+        googleMap.addMarker(MarkerOptions().position(guayabal).title("Hacienda Guayabal").snippet("Chinchina, val: 4.5 "))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(guayabal, 10F))
     }
 
