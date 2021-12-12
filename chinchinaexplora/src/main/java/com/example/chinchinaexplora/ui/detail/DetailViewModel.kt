@@ -1,4 +1,4 @@
-package com.example.chinchinaexplora.detail
+package com.example.chinchinaexplora.ui.detail
 
 import androidx.lifecycle.ViewModel
 

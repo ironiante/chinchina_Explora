@@ -1,4 +1,4 @@
-package com.example.chinchinaexplora.list
+package com.example.chinchinaexplora.ui.list
 
 import android.view.LayoutInflater
 import android.view.View

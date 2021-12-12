@@ -14,13 +14,17 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-/*class MapsFragment : Fragment() {
+class MapsFragment : Fragment() {
 
-    private val args = MapsFragmentArgs by navArgs()
+    //private val args = MapsFragmentArgs by navArgs()
     private val callback = OnMapReadyCallback { googleMap ->
 
+        val haciendaGuayabal =LatLng(4.9560593,-75.6108624)
+        googleMap.addMarker(MarkerOptions().position(haciendaGuayabal).title("Hacienda Guayabal").snippet("Chinchiná, val: 4,5"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(haciendaGuayabal,15F))
 
-        val sitios = args.data
+
+        /*val sitios = args.data
         val sitioslugares = LatLng(sitios.latitud, sitios.longitud)
         googleMap.addMarker(
             MarkerOptions()
@@ -28,7 +32,7 @@ import com.google.android.gms.maps.model.MarkerOptions
                 .title(sitios)
                 .snippet("Chinchina, val: 4.5 ")
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sitioslugares, 10F))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sitioslugares, 10F))*/
 
 
     }
@@ -48,4 +52,4 @@ import com.google.android.gms.maps.model.MarkerOptions
     }
 }
 
-*/
+

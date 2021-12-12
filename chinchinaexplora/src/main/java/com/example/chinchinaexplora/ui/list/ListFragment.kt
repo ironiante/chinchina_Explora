@@ -1,4 +1,4 @@
-package com.example.chinchinaexplora.list
+package com.example.chinchinaexplora.ui.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.chinchinaexplora.databinding.FragmentListBinding
-import com.example.chinchinaexplora.main.MainActivity
+import com.example.chinchinaexplora.ui.main.MainActivity
 import com.example.chinchinaexplora.model.sitioItem
 
 
@@ -33,7 +33,10 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
-        listViewModel.loadMockSitiosTuristicosFromJson(context?.assets?.open("data.json"))
+
+       // listViewModel.loadMockSitiosTuristicosFromJson(context?.assets?.open("data.json"))
+
+        listViewModel.getSitioFromServer()
 
         listViewModel.onSitioturisticoloaded.observe(viewLifecycleOwner, { result ->
             onSitiosturisticosLoadedSubscribe(result)

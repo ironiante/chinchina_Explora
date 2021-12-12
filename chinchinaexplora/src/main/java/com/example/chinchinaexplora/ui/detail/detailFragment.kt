@@ -1,4 +1,4 @@
-package com.example.chinchinaexplora.detail
+package com.example.chinchinaexplora.ui.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,15 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.chinchinaexplora.R
 import com.example.chinchinaexplora.databinding.FragmentDetailBinding
-import com.example.chinchinaexplora.main.MainActivity
-//import com.example.chinchinaexplora.maps.MapsFragment
-import com.google.android.gms.maps.SupportMapFragment
-import kotlinx.coroutines.flow.callbackFlow
+import com.example.chinchinaexplora.ui.main.MainActivity
+import com.example.chinchinaexplora.maps.MapsFragment
 
 
 class detailFragment : Fragment() {

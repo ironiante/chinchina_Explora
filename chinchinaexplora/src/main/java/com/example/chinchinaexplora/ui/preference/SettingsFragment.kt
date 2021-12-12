@@ -1,11 +1,11 @@
-package com.example.chinchinaexplora.preference
+package com.example.chinchinaexplora.ui.preference
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.example.chinchinaexplora.R
-import com.example.chinchinaexplora.main.MainActivity
+import com.example.chinchinaexplora.ui.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 
