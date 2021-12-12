@@ -9,8 +9,12 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.chinchinaexplora.R
 import com.example.chinchinaexplora.databinding.FragmentDetailBinding
 import com.example.chinchinaexplora.main.MainActivity
+//import com.example.chinchinaexplora.maps.MapsFragment
+import com.google.android.gms.maps.SupportMapFragment
+import kotlinx.coroutines.flow.callbackFlow
 
 
 class detailFragment : Fragment() {
@@ -49,5 +53,9 @@ class detailFragment : Fragment() {
                 findNavController().navigate(detailFragmentDirections.actionDetailFragmentToMapsFragment())
             }
         }
+        //val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+        //mapFragment?.getMapAsync(callback)
     }
+
+
 }

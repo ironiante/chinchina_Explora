@@ -1,57 +1,59 @@
-[
-   {
-      "Nombre del lugar":"Hacienda Guayabal ",
-      "Descripción":"Un tránsito mágico, del grano a la taza.",
-      "Puntuación" : 4.5,
-      "urlpicture":"https://i.ibb.co/KDy0NJ8/guayabal.jpg",
-      "descripcion2": "¿Un tránsito mágico, del grano a la taza... ¿Sabes por qué es el mejor café del mundo? Las respuestas están en la Hacienda Guayabal.",
-      "indicacion" : "Km 13 via Chinchiná a Pereira",
-      "temperatura" : "19 C°",
-      "latitud":4.95879418439515,
-      "longitud":-75.60643664188851
-   },
-   {
-      "Nombre del lugar":"Hacienda El Sinai ",
-      "Descripción":"Hacienda de la familia hernández por 5 generaciones desde 1854",
-      "Puntuación" : 4.1,
-      "urlpicture":"https://i.ibb.co/KrSzsqv/sinai.jpg",
-      "descripcion2": "Finca cafetera con más de 80 años de tradición en el cultivo y proceso del café, hoy abierta al visitante nacional y extranjero.",
-      "indicacion" : "Vereda Sinai",
-      "temperatura" : "21 C°",
-      "latitud":4.9540412153650095,
-      "longitud": -75.66092164525296
-   },
-   {
-      "Nombre del lugar":"Plaza de bolivar ",
-      "Descripción":"Es el punto neurálgico del municipio donde uno puede tomarse un café",
-      "Puntuación" : 4.0,
-      "urlpicture":"https://i.ibb.co/yWjJgDb/plaza-de-bolivar.jpg",
-      "descripcion2": "Es el escenario principal del Municipio donde encontramos diversa flora y fauna, sitio de encuentro histórico, cultural, comercial y gastronómico.  .",
-      "indicacion" : "Chinchiná, plaza de Bolivar",
-      "temperatura" : "15 C°",
-      "latitud":4.982953185590244,
-      "longitud":-75.60560777137619
-   },
-   {
-      "Nombre del lugar":"Hacienda La Gaviota  ",
-      "Descripción":"La Hacienda La Gaviota es una granja que cultiva uno de los mejores cafés del mundo",
-      "Puntuación" : 4.6,
-      "urlpicture":"https://i.ibb.co/jMd2kPT/la-gaviota.jpg",
-      "descripcion2": "\"Finca cafetera con más de 80 años de tradición en el cultivo y proceso del café, hoy abierta al visitante nacional y extranjero.",
-      "indicacion" : "Km 25, vía Chinchiná Manizales",
-      "temperatura" : "27 C°",
-      "latitud":4.968057344081513,
-      "longitud":-75.65311041641715
-   },
-   {
-      "Nombre del lugar":"Granja Pinares  ",
-      "Descripción":"Ganadería - Porcicultura -Especies menores Restaurante - Piscicultura",
-      "Puntuación" : 4.9,
-      "urlpicture":"https://i.ibb.co/n8nsMxR/granjapinares.jpg",
-      "descripcion2": "Magnífico paraje veredal del municipio de Chinchiná, con hermosos paisajes cafeteros entremezclados con el exuberante Río Cauca.",
-      "indicacion" : "Vereda el porvenir, Km 5",
-      "temperatura" : "18 C°",
-      "latitud":4.962704034613813,
-      "longitud":-75.57677174525304
-   }
-]
+{
+   "data": [
+      {
+         "Nombre del lugar": "Hacienda Guayabal ",
+         "Descripción": "Un tránsito mágico, del grano a la taza.",
+         "Puntuación": 4.5,
+         "urlpicture": "https://i.ibb.co/KDy0NJ8/guayabal.jpg",
+         "descripcion2": "¿Un tránsito mágico, del grano a la taza... ¿Sabes por qué es el mejor café del mundo? Las respuestas están en la Hacienda Guayabal.",
+         "indicacion": "Km 13 via Chinchiná a Pereira",
+         "temperatura": "19 C°",
+         "latitud": 4.95879418439515,
+         "longitud": -75.60643664188851
+      },
+      {
+         "Nombre del lugar": "Hacienda El Sinai ",
+         "Descripción": "Hacienda de la familia hernández por 5 generaciones desde 1854",
+         "Puntuación": 4.1,
+         "urlpicture": "https://i.ibb.co/KrSzsqv/sinai.jpg",
+         "descripcion2": "Finca cafetera con más de 80 años de tradición en el cultivo y proceso del café, hoy abierta al visitante nacional y extranjero.",
+         "indicacion": "Vereda Sinai",
+         "temperatura": "21 C°",
+         "latitud": 4.9540412153650095,
+         "longitud": -75.66092164525296
+      },
+      {
+         "Nombre del lugar": "Plaza de bolivar ",
+         "Descripción": "Es el punto neurálgico del municipio donde uno puede tomarse un café",
+         "Puntuación": 4.0,
+         "urlpicture": "https://i.ibb.co/yWjJgDb/plaza-de-bolivar.jpg",
+         "descripcion2": "Es el escenario principal del Municipio donde encontramos diversa flora y fauna, sitio de encuentro histórico, cultural, comercial y gastronómico.  .",
+         "indicacion": "Chinchiná, plaza de Bolivar",
+         "temperatura": "15 C°",
+         "latitud": 4.982953185590244,
+         "longitud": -75.60560777137619
+      },
+      {
+         "Nombre del lugar": "Hacienda La Gaviota  ",
+         "Descripción": "La Hacienda La Gaviota es una granja que cultiva uno de los mejores cafés del mundo",
+         "Puntuación": 4.6,
+         "urlpicture": "https://i.ibb.co/jMd2kPT/la-gaviota.jpg",
+         "descripcion2": "\"Finca cafetera con más de 80 años de tradición en el cultivo y proceso del café, hoy abierta al visitante nacional y extranjero.",
+         "indicacion": "Km 25, vía Chinchiná Manizales",
+         "temperatura": "27 C°",
+         "latitud": 4.968057344081513,
+         "longitud": -75.65311041641715
+      },
+      {
+         "Nombre del lugar": "Granja Pinares  ",
+         "Descripción": "Ganadería - Porcicultura -Especies menores Restaurante - Piscicultura",
+         "Puntuación": 4.9,
+         "urlpicture": "https://i.ibb.co/n8nsMxR/granjapinares.jpg",
+         "descripcion2": "Magnífico paraje veredal del municipio de Chinchiná, con hermosos paisajes cafeteros entremezclados con el exuberante Río Cauca.",
+         "indicacion": "Vereda el porvenir, Km 5",
+         "temperatura": "18 C°",
+         "latitud": 4.962704034613813,
+         "longitud": -75.57677174525304
+      }
+   ]
+}
