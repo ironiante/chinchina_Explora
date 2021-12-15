@@ -36,7 +36,11 @@
         android:label="SettingsFragment" />
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.example.chinchinaexplora.maps.MapsFragment"
+        android:name="com.example.chinchinaexplora.ui.maps.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="data"
+            app:argType="com.example.chinchinaexplora.model.sitioItem" />
+    </fragment>
 </navigation>

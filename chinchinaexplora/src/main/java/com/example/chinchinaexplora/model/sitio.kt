@@ -1,4 +1,5 @@
 package com.example.chinchinaexplora.model
 
 
-class sitio : ArrayList<sitioItem>()
+
+class sitio: ArrayList<sitioItem>()

@@ -9,11 +9,14 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.chinchinaexplora.databinding.FragmentDetailBinding
+import com.example.chinchinaexplora.model.sitioItem
 import com.example.chinchinaexplora.ui.main.MainActivity
-import com.example.chinchinaexplora.maps.MapsFragment
+import com.squareup.picasso.Picasso
 
 
 class detailFragment : Fragment() {
+
+    private lateinit var sitios: sitioItem
 
     private lateinit var detailBinding: FragmentDetailBinding
     private val detailViewModel: DetailViewModel by viewModels()
@@ -36,21 +39,21 @@ class detailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val sitiosturisticos =args.sitioturistico
+
+        sitios =args.sitioturistico
 
         with(detailBinding){
-            nameTextView.text =sitiosturisticos.nombreDelLugar
-            descripcion2TextView.text = sitiosturisticos.descripcion2
-            indicacionTextView.text = sitiosturisticos.indicacion
-            temperaturaTextView.text = sitiosturisticos.temperatura
-            com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlpicture).into(pictureImageView)
+            nameTextView.text =sitios.nombreDelLugar
+            descripcion2TextView.text = sitios.descripcion2
+            indicacionTextView.text = sitios.indicacion
+            temperaturaTextView.text = sitios.temperatura
+            Picasso.get().load(sitios.urlpicture).into(pictureImageView)
 
             mapButton.setOnClickListener {
-                findNavController().navigate(detailFragmentDirections.actionDetailFragmentToMapsFragment())
+                findNavController().navigate(detailFragmentDirections.actionDetailFragmentToMapsFragment(data = sitios))
             }
         }
-        //val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
-        //mapFragment?.getMapAsync(callback)
+
     }
 
 

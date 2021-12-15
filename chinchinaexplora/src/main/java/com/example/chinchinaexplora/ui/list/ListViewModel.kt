@@ -1,6 +1,5 @@
 package com.example.chinchinaexplora.ui.list
 
-import android.provider.Settings
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

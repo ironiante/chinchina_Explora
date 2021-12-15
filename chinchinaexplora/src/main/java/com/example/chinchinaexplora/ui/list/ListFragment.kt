@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.chinchinaexplora.databinding.FragmentListBinding
-import com.example.chinchinaexplora.ui.main.MainActivity
 import com.example.chinchinaexplora.model.sitioItem
+import com.example.chinchinaexplora.ui.main.MainActivity
 
 
 class ListFragment : Fragment() {
@@ -38,8 +38,8 @@ class ListFragment : Fragment() {
 
         listViewModel.getSitioFromServer()
 
-        listViewModel.onSitioturisticoloaded.observe(viewLifecycleOwner, { result ->
-            onSitiosturisticosLoadedSubscribe(result)
+        listViewModel.onSitioturisticoloaded.observe(viewLifecycleOwner, {
+            onSitiosturisticosLoadedSubscribe(it)
         })
         sitiosturisticosAdapter = sitiosAdapter(listChinchinaexplora!!, onItemClicked = {onSitioTuristicoClicked(it)})
 
