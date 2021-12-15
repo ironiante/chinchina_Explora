@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sprint2_entrega_final">
         <activity
-            android:name=".list_sitios_activity"
+            android:name=".list.list_sitios_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Detalle.DetalleActivity"
             android:exported="false">
 
         </activity>

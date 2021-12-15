@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "sprint2_entrega_final"
 include ':app'
+include ':chinchinaexplora'
