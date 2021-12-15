@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.chinchinaexplora.list.ListFragment"
+        android:name="com.example.chinchinaexplora.ui.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -19,16 +19,28 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.chinchinaexplora.detail.detailFragment"
+        android:name="com.example.chinchinaexplora.ui.detail.detailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
 
         <argument
             android:name="sitioturistico"
             app:argType="com.example.chinchinaexplora.model.sitioItem" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.chinchinaexplora.preference.SettingsFragment"
+        android:name="com.example.chinchinaexplora.ui.preference.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.chinchinaexplora.ui.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="data"
+            app:argType="com.example.chinchinaexplora.model.sitioItem" />
+    </fragment>
 </navigation>

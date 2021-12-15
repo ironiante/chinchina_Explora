@@ -1,4 +1,4 @@
-package com.example.chinchinaexplora.main
+package com.example.chinchinaexplora.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.chinchinaexplora.R
-import com.example.chinchinaexplora.preference.SettingsFragment
+import com.example.chinchinaexplora.ui.preference.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
